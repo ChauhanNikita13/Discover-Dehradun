@@ -59,10 +59,15 @@ section {
     width: 50%;
     box-sizing: border-box;
 }
+.text h2{
+    color: black;
+    font-size: 25px;
+}
 #about img{
     max-width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-top-left-radius: 45%; 
+    border-bottom-right-radius: 45%;
 }
 #attractions {
     background-color: #128546;
@@ -80,12 +85,7 @@ section {
     margin-left: 20px;
     text-align: left;
 }
-.right .attraction-info{
-    text-align: justify;
-    margin-right: 20px;
-    text-align: right;
 
-}
 
 .attraction-info h3{
     color: black;
