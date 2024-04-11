@@ -96,6 +96,7 @@ img {
     max-width: 100%;
     height: auto;
     border-top-left-radius: 45%;
+    object-fit: cover;
     border-bottom-right-radius: 45%;
 }
 
