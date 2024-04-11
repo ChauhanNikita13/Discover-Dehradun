@@ -3,16 +3,41 @@
         padding: 30px;
     }
 
+
     .attraction {
-        width: 90%; /* Adjust width for smaller screens */
-        display: block; /* Change display to block for stacking on smaller screens */
-        margin: 0 auto 30px; /* Center attractions */
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 0 auto 30px;
     }
 
     .attraction img {
-        width: 100%; /* Set image width to fill its container */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
     }
+
+    .attraction-info h3 {
+        font-size: 20px;
+    }
+
+    .attraction-info p {
+        font-size: 16px;
+    }
+
+    #about {
+        width: 100%;
+        flex-direction: column; 
+    }
+.text{
+    width: 100%;
+
+}
+
+    #about img {
+        width: 100%;
+        /* height: auto; */
+    }
+
 }
 
 
@@ -23,7 +48,7 @@ body {
 }
 
 header {
-     background-color: #333;
+    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -47,28 +72,33 @@ nav ul li a {
 section {
     padding: 50px;
 }
-#about{
+
+#about {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    /* justify-content: space-between;
+    padding: 20px; */
     color: white;
-    background-color: #128546; 
+    background-color: #128546;
 }
 
-.text,img{ 
+.text,
+img {
     width: 50%;
     box-sizing: border-box;
 }
-.text h2{
+
+.text h2 {
     color: black;
     font-size: 25px;
 }
-#about img{
+
+#about img {
     max-width: 100%;
     height: auto;
-    border-top-left-radius: 45%; 
+    border-top-left-radius: 45%;
     border-bottom-right-radius: 45%;
 }
+
 #attractions {
     background-color: #128546;
     color: white;
@@ -80,16 +110,15 @@ section {
     margin-bottom: 30px;
 }
 
-.left .attraction-info{
+.left .attraction-info {
     text-align: justify;
     margin-left: 20px;
     text-align: left;
 }
 
-
-.attraction-info h3{
+.attraction-info h3 {
     color: black;
-   font-size: 22px;
+    font-size: 22px;
 }
 
 .attraction img {
@@ -97,18 +126,21 @@ section {
     height: 250px;
     object-fit: cover;
     box-shadow: 0 0 20px #333;
-    
+
 }
-.attraction img:hover{
+
+.attraction img:hover {
     transform: scale(1.03);
     filter: drop-shadow(0 0 10px #333);
     transition: 0.3s;
 }
-#contact{
+
+#contact {
     background-color: #128546;
     color: white;
 }
-#contact a{
+
+#contact a {
     text-decoration: none;
     color: #dcff3e;
 }
