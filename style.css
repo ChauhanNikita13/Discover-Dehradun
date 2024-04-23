@@ -1,4 +1,4 @@
- /* @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
     section {
         padding: 30px;
     }
@@ -7,7 +7,7 @@
     .attraction {
         display: flex;
         flex-direction: column-reverse;
-        width: 90%;
+        width: 100%;
         margin: 0 auto 30px;
     }
 
@@ -38,7 +38,7 @@
         height: auto; 
      }
 
-}  */
+} 
 
 
 body {
@@ -48,6 +48,7 @@ body {
 }
 
 header {
+   
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -80,11 +81,11 @@ section {
 } 
 
 
-.text,
+ .text,
 img {
     width: 50%;
     box-sizing: border-box;
-}
+} 
 
 .text h2 {
     color: black;
