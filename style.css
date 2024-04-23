@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+ /* @media only screen and (max-width: 600px) {
     section {
         padding: 30px;
     }
@@ -24,7 +24,7 @@
         font-size: 16px;
     }
 
-    #about {
+#about {
         width: 100%;
         flex-direction: column; 
     }
@@ -35,10 +35,10 @@
 
     #about img {
         width: 100%;
-        /* height: auto; */
-    }
+        height: auto; 
+     }
 
-}
+}  */
 
 
 body {
@@ -50,7 +50,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -71,15 +71,14 @@ nav ul li a {
 
 section {
     padding: 50px;
+    color: white;
+    background-color: #07c15b;
 }
 
-#about {
+ #about {
     display: flex;
-    /* justify-content: space-between;
-    padding: 20px; */
-    color: white;
-    background-color: #128546;
-}
+} 
+
 
 .text,
 img {
@@ -95,31 +94,34 @@ img {
 #about img {
     max-width: 100%;
     height: auto;
-    border-top-left-radius: 45%;
+    border-top-left-radius: 40%;
     object-fit: cover;
-    border-bottom-right-radius: 45%;
+    border-bottom-right-radius: 40%;
 }
 
-#attractions {
-    background-color: #128546;
-    color: white;
+
+
+#attractions h3{
+    text-align: center;
+    color: black;
+    font-size: 25px;
 }
 
 .attraction {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.left .attraction-info {
+/* .left .attraction-info {
     text-align: justify;
-    margin-left: 20px;
     text-align: left;
-}
+} */
 
-.attraction-info h3 {
+.attraction-info h2 {
     color: black;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .attraction img {
@@ -136,16 +138,84 @@ img {
     transition: 0.3s;
 }
 
-#contact {
-    background-color: #128546;
-    color: white;
-}
+.contactform {
+    padding: 1rem;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .contactform > .formgroup {
+    margin-bottom: 1rem;
+  }
+  
+  .formgroup > .input,
+  .formgroup > textarea {
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  
+  .submitbutton {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
 
-#contact a {
-    text-decoration: none;
-    color: #dcff3e;
-}
-
+  @media only screen and (max-width: 460px) {
+    .profileimage {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .herosectiondetails > h1 {
+      font-size: 30px;
+      margin-top: 1.5rem;
+      margin-bottom: 0rem;
+    }
+  
+    .herosectiondetails > h1 {
+      font-size: 20px;
+      margin: 0;
+      font-weight: 400;
+    }
+  }
+  
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .links {
+    transition: ease-in-out 300ms;
+    color: black;
+  }
+  
+  .links:hover {
+    transform: scale(1.2);
+    
+  }
+  
+  .links i.fa-phone:hover {
+    color: #074870; /* LinkedIn blue */
+  }
+  
+  .links i.fa-envelope:hover {
+    color: #e74c3c; /* Red */
+  }
+  
+  .links i.fa-square-instagram:hover {
+    color: #dd2a7b; /* Instagram pink */
+  }
+  
+  .links i.fa-x-twitter:hover {
+    color: #220786; /* GitHub black */
+  }
+  .contactform h2{
+        color: black;
+        font-size: 25px;
+    
+  }
 footer {
     background-color: #333;
     color: #fff;
